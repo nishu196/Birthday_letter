@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>An Equation of Us ❤️</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
+      color: #333;
+      padding: 40px;
+      text-align: center;
+    }
+    .letter {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+      text-align: left;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #c2185b;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    h3 {
+      text-align: center;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    .highlight {
+      color: #d81b60;
+      font-weight: bold;
+    }
+    .signature {
+      margin-top: 30px;
+      text-align: right;
+      font-style: italic;
+      font-weight: bold;
+      color: #444;
+    }
+    /* Floating heart animation */
+    .heart {
+      position: fixed;
+      bottom: -10px;
+      color: red;
+      font-size: 24px;
+      animation: floatUp 8s linear infinite;
+    }
+    @keyframes floatUp {
+      from { transform: translateY(0) scale(1); opacity: 1; }
+      to { transform: translateY(-120vh) scale(1.5); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="letter">
+    <h1>“An Equation of Us”</h1>
+    <h3>To the one who codes my world,</h3>
+    
+    <p>Happy Birthday, my love! 💖</p>
+
+    <p>Who would have thought that an arranged meeting — two strangers sitting across from each other, introduced by family — would turn into this beautiful algorithm of my life?</p>
+
+    <p>I still remember the early days: a little awkward, a little formal, full of polite smiles and unspoken questions. But slowly, with every passing day, every late-night conversation (by 11pm), every nickname you came up with for me (yes, even the silly ones 😅), you became closest to my heart.</p>
+
+    <p>You, my dear developer, didn’t just write clean code — you rewrote my entire equation.</p>
+
+    <p>
+      You are my constant in a world of variables. <br>
+      My output when life throws in strange inputs. <br>
+      My debugger of doubt.
+    </p>
+
+    <p>Thank you for loving me in ways that feel warm, fun, nibba-nibbi, romantic, and completely us.</p>
+
+    <p>I always say if I could be a poet, then I would have written amazing poetry for you. But if I could write our love in a programming language, it would be the most elegant and beautifully structured code. You are the <span class="highlight">main function</span> in my life — the one that everything else depends on.</p>
+
+    <p>Thank you for being my constant, my always-on server, my favorite commit. You update my happiness every single day, and no patch or upgrade could ever replace you.</p>
+
+    <p>So on your birthday, I just want to say this: <br>
+    <span class="highlight">I love you in every version, in every language, and on every platform of life.</span></p>
+
+    <p>May this year bring you success, good health, lots of love, happiness, and 2 beautiful kids with me ❤️ (and restful nights — okay, at least sometimes 😅). And always remember — no matter what version of life we’re in... You’ll always be my favorite solution.</p>
+
+    <div class="signature">
+      Your Idli / Dholu / Bukku / Nishu / Rimmi ki bwari / Snorlax / B2 / BB / Heavy driver 💕
+    </div>
+  </div>
+
+  <script>
+    // Floating hearts effect
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerText = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 8000);
+    }
+    setInterval(createHeart, 800);
+  </script>
+</body>
+</html>
